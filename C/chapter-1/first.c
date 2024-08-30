@@ -1,11 +1,19 @@
 #include <stdio.h>
 
-int main()
+void log_message(char *name, int *age, int *_what);
+
+void main()
 {
-    char name = "Utsav";
+    char _name[] = "Utsav";
     int age = 18;
-    float pi = 3.14;
     int _what = 97;
 
-    return 0;
-};
+    log_message(_name, age, _what);
+}
+
+void log_message(char *name, int *age, int *_what)
+{
+    printf("Name: %s\n", name);
+    printf("Age: %s\n", age);
+    printf("_What: %s\n", _what);
+}
